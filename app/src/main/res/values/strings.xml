@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ControlWork2</string>
+    <string name="save">Save</string>
+    <string name="output">Output</string>
+    <string name="anagram_count">Anagram count: 0</string>
+    <string name="enter_anagram">Enter anagram</string>
+</resources>

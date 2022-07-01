@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/anagram"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:hint="@string/enter_anagram"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/anagram"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <Button
+        android:id="@+id/btn_output"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:text="@string/output"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btn_save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+        android:id="@+id/anagram_count"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:text="@string/anagram_count"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btn_output"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
