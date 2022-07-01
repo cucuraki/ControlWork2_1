@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             onOutputClicked()
         }
     }
-    fun onSaveClicked(){
+    private fun onSaveClicked(){
         if(binding.anagram.text.toString().isEmpty()){
             Toast.makeText(applicationContext, "Please enter anagram", Toast.LENGTH_SHORT).show()
             return
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(applicationContext, "String added", Toast.LENGTH_SHORT).show()
     }
     @SuppressLint("SetTextI18n")
-    fun onOutputClicked(){
+    private fun onOutputClicked(){
         val sortedAnagrams = arrayListOf<CharArray>()
         val countAnagrams = arrayListOf<ArrayList<String>>()
         var added: Boolean
